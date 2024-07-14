@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Input } from "@nextui-org/react";
+import localfont from "@next/font/local";
 
 const DynamicSVGStationName = () => {
     const [stationName, setStationName] = useState('');
