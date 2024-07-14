@@ -1,9 +1,12 @@
 'use client';
-
+import localFont from 'next/font/local'
 import React, { useState, useEffect } from 'react';
 import { Input } from "@nextui-org/react";
-import localfont from "@next/font/local";
-
+import localFont from "next/font/local";
+const myFont = localFont({
+    src: 'JF-Dot-Ayu20.ttf',
+    display: 'swap',
+})
 const DynamicSVGStationName = () => {
     const [stationName, setStationName] = useState('');
     const [originalSvgContent, setOriginalSvgContent] = useState('');
